@@ -1,0 +1,60 @@
+@charset "UTF-8";
+:root {
+    /* Colors */
+    --card-bg: hsl(0, 0%, 100%);
+    --body-bg: hsl(212, 45%, 89%);
+    --card-text: hsl(220, 15%, 55%);
+    --card-title: hsl(218, 44%, 22%);
+    --small: hsl(228, 45%, 44%);
+}
+body {
+    background-color: var(--body-bg);
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 1em;
+}
+.card {
+    max-width: 320px;
+    background-color: var(--card-bg);
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 1em;
+    text-align: center;
+}
+.card-img {
+    max-width: 100%;
+    height: auto;
+}
+.card, .card-img {
+    border-radius: 1em;
+}
+.card-body {
+	padding: 0 1em 1.5em;
+}
+.card-title {
+    color: var(--card-title);
+    font-weight: 700;
+    font-size: 1.375rem;
+    line-height: 1.227em;
+}
+.card-text {
+    color: var(--card-text);
+    font-size: 0.938rem;
+	line-height: 1.266em;
+    max-width: 35ch;
+    margin: auto;
+}
+small {
+    font-size: 0.688rem;
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+.attribution a {
+    color: var(--small);
+}
