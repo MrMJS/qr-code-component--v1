@@ -3,25 +3,57 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- displays site properly based on user's device -->
-
-<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-<title>Frontend Mentor | QR code component</title>
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+<title>Frontend Mentor | Equalizer landing page</title>
+<meta name="description" content="Frontend Mentor Challenge | Equalizer landing page">
+<!-- Goggle Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
-</style>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
+<!-- Reset CSS -->
+<link href="css/modern-reset.css" rel="stylesheet" type="text/css">
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!-- Bootstrap Icons CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+<!-- Custom CSS custom -->
 <link href="css/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<main>
-    <div class="card"> <img src="images/image-qr-code.png" alt="QR code component challenge on Frontend Mentor - https://www.frontendmentor.io/" class="card-img" title="https://www.frontendmentor.io">
-        <div class="card-body">
-            <h1 class="card-title">Improve your front-end skills by building projects</h1>
-            <p class="card-text">Scan the QR code to visit Frontend Mentor and take your coding skills to the next leve.</p>
+<div class="container">
+    <header><a href="index.html"><img src="images/logo.svg" alt="Equalizer Logo" class="logo"/></a></header>
+    <main>
+        <h1 class="headline">We make your music sound extraordinary.</h1>
+        <p> A system audio equalizer specifically designed for Android and iOS. Freely tune the 
+            way your music sounds with a professional grade parametric EQ &amp; volume mixer. Control 
+            bass, mids, treble, gain control, reverb, and more!</p>
+    </main>
+    <aside>
+        <div class="phone-wrap"><img src="images/illustration-app.png" alt="eq phone" class="phone"/></div>
+        <div class="dark-orange-wrap">
+            <h2 class="sub-headline">Premium EQ</h2>
+            <p class="font-style--2">Get expert-level control with a robust equalizer, volume mixer, and spatial audio. Take 
+                your listening experience to a whole new level and access all our incredible features!</p>
+            <p class="pricing"><span class="price">$4</span> <span class="per-month">/ month</span></p>
+            <ul>
+                <li class="btn btn-dark"><i class="bi bi-apple"></i> iOS Download</li>
+                <li class="btn btn-light mb-0"><i class="bi bi-android2"></i> Android Download </li>
+            </ul>
         </div>
-    </div>
-    <small class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://www.frontendmentor.io/profile/MrMJS">MrMJS</a>.</small> </main>
+    </aside>
+    <footer>
+        <div class="footer-logo"><img src="images/logo.svg" alt="equalizer logo" class="mb-4"/></div>
+        <div class="footer-contact--social-media">
+            <p class="footer-contact">All rights reserved © Equalizer 2021. Have any problems? Contact us via social media or email us at <strong><a href="mailto:equalizer@example.com">equalizer@example.com</a></strong> </p>
+            <ul class="social-media">
+                <li class="icons"><a href="#"><img src="images/icon-facebook.svg" alt="facebook" title="facebook"/></a></li>
+                <li class="icons"><a href="#"><img src="images/icon-instagram.svg" alt="instagram" title="instagram"/></a></li>
+                <li class="icons"><a href="#"><img src="images/icon-twitter.svg" alt="twitter" title="twitter"/></a></li>
+            </ul>
+        </div>
+    </footer>
+</div>
+<!-- Bootstrap Bundle with Popper --> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
